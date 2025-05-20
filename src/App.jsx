@@ -14,7 +14,7 @@ export const App = () => {
   const [selected, setSelected] = useState(tabs[0]);
 
   const onTabSelected = tab => {
-    if (tab !== selected) {
+    if (tab.id !== selected.id) {
       setSelected(tab);
     }
   };
